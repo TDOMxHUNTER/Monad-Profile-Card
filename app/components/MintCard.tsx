@@ -26,7 +26,7 @@ const MintCard: React.FC<MintCardProps> = ({
   // Get user's MON balance
   const { data: balance } = useBalance({
     address: address,
-    chainId: 41454, // Monad testnet
+    chainId: 10143, // Monad testnet
   });
 
   // Check if user has already minted (limit 1 per wallet)
@@ -72,7 +72,7 @@ const MintCard: React.FC<MintCardProps> = ({
     }
   ] as const;
 
-  const mintPrice = parseEther('1'); // 1 MON per NFT
+  const mintPrice = parseEther('1'); // 1 MON per NFT  // unused for now
   
   // Check if user has enough balance
   const hasEnoughBalance = balance && balance.value >= mintPrice;

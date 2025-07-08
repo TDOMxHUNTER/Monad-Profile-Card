@@ -1,0 +1,178 @@
+
+.mint-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.mint-content {
+  text-align: center;
+}
+
+.mint-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.mint-content p {
+  margin: 0 0 20px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.balance-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.balance-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.balance-value {
+  color: #00ff88;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mint-limit-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.limit-icon {
+  color: #00ff88;
+  font-size: 16px;
+}
+
+.limit-text {
+  color: #00ff88;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.price-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.price-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price-value {
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mint-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.amount-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.amount-selector label {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.amount-selector input {
+  width: 80px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.amount-selector input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mint-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.mint-button:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.mint-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.connect-message {
+  color: rgba(255, 196, 0, 0.9);
+  font-size: 13px;
+  margin-top: 12px !important;
+}
+
+.success-message {
+  color: rgba(0, 255, 136, 0.9);
+  font-size: 14px;
+  margin-top: 12px !important;
+  font-weight: 500;
+}
+
+.error-message {
+  color: rgba(255, 107, 107, 0.9);
+  font-size: 14px;
+  margin-top: 12px !important;
+  font-weight: 500;
+}
